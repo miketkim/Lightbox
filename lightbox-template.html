@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href="css/lightbox.css" rel="stylesheet">
+
+
+
+	
+<title>Lightbox</title>
+</head>
+<body>
+	<button type="button" class="filters" data-filter="all">All</button>
+	<button type="button" class="filters" data-filter=".asian">Asian Food</button>
+	<button type="button" class="filters" data-filter=".snack">Snack Food</button>
+
+	
+	
+	<div class = "gallery container">
+		<a href="images/kimchi.jpeg" data-lightbox="image" data-title="Kimchi" class = 'mix asian'><img src="images/kimchi.jpeg" alt="Kimchi"></a>
+		<a href="images/salmon_sushi.jpeg" data-lightbox="image" data-title="Salmon" class = 'mix asian'><img src="images/salmon_sushi.jpeg" alt="Salmon"></a>
+		<a href="images/steak.jpeg" data-lightbox="image" data-title="Steak" class = 'mix asian'><img src="images/steak.jpeg" alt="Steak"></a>
+		<a href="images/popcorn.jpeg" data-lightbox="image" data-title="Popcorn" class ='mix snack'><img src="images/popcorn.jpeg" alt="Popcorn"></a>
+		<a href="images/pasta.jpeg" data-lightbox="image" data-title="Pasta" class='mix snack'><img src="images/pasta.jpeg" alt="Pasta"></a>
+		<a href="images/caprse.jpeg" data-lightbox="image" data-title="Caprese" class= 'mix asian'><img src="images/caprse.jpeg" alt="Caprese"></a>
+		<a href="images/falafel.jpeg" data-lightbox="image" data-title="Falafel" class = 'mix asian'><img src="images/falafel.jpeg" alt="Falafel"></a>
+		<a href="images/tacos.jpeg" data-lightbox="image" data-title="Tacos" class = 'mix asian'><img src="images/tacos.jpeg" alt="Tacos"></a>
+		<a href="images/pizza.jpg" data-lightbox="image" data-title="Pizza" class = 'mix snack'><img src="images/pizza.jpg" alt="Salmon"></a>
+	</div>
+
+	<script src="js/lightbox.js"></script>
+	<script src="js/mixitup.min.js"></script>
+
+	<script>
+		var containerEl = document.querySelector('.container');
+		var mixer = mixitup(containerEl);
+	</script>
+
+</body>
+</html>
